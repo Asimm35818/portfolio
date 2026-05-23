@@ -1,0 +1,42 @@
+.projectImage {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.projectBox {
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  background: var(--color-indigo-950);
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.projectBox:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0 20px 25px -5px,
+    rgba(0, 0, 0, 0.1) 0 10px 10px -5px;
+}
+
+.projectDetails {
+  text-align: left;
+}
+
+.projectDetails h2 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-violet-100);
+}
+
+.projectDetails p {
+  font-size: 0.7rem;
+  color: var(--color-violet-100);
+}
+.RoundedLabel {
+}
