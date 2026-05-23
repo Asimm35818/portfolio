@@ -39,8 +39,56 @@ const NavBar: React.FC = () => {
         </div>
       </NavLink>
 
+      <button
+        type="button"
+        onClick={toggleTheme}
+        className={Styles.themeToggle}
+        aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+        aria-pressed={isDark}
+        title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      >
+        <span
+          className={`${Styles.themeIcon} ${isDark ? Styles.themeIconDark : ""}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={Styles.moonIcon}
+            aria-hidden="true"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={Styles.sunIcon}
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+        </span>
+      </button>
+
       <div
-        className={`${Styles.navPages} flex items-center gap-2 sm:gap-4 text-base sm:text-lg md:text-xl ml-auto`}
+        className={`${Styles.navPages} flex items-center gap-2 sm:gap-4 text-base sm:text-lg md:text-xl`}
       >
         <NavLink
           to="/"
@@ -75,27 +123,6 @@ const NavBar: React.FC = () => {
         >
           Blog
         </NavLink>
-        <button
-          type="button"
-          onClick={toggleTheme}
-          className="cursor-pointer p-2 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-        >
-          <svg
-            xmlns="http://w3.org"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-moon text-gray-600 dark:text-gray-300"
-          >
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-          </svg>
-        </button>
       </div>
     </div>
   );
