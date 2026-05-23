@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "theme.css";
+.navBar {
+  display: flex;
+  align-items: center; /* vertical center the children */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  color: var(--card-foreground);
+  gap: 0.75rem 1rem;
+  padding: 1rem 1rem;
+}
+
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.titleBox h1 {
+  color: var(--card-foreground);
+  line-height: 1.1;
+}
+
+.navPages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  color: var(--card-foreground);
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.navButton:hover {
+  color: var(--muted-foreground);
+}
+
+.navButton.active {
+  color: var(--primary);
+  font-weight: 500;
+}
+.toggleIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  display: block;
+  border: 0.1rem var(--accent-foreground) solid;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    justify-content: center;
+    padding: 0.85rem 1rem 1rem;
+    border: 0;
+  }
+
+  .brandLink {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    order: -1;
+    margin-bottom: 0.25rem;
+  }
+
+  .navPages {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .navButton {
+    padding: 0.45rem 0.6rem;
+  }
+}
