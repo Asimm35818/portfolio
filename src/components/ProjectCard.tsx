@@ -15,13 +15,14 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
   const project = projects.find((p) => p.id === projectId);
   if (!project) return null;
+  if ((project.hidden = true)) return null;
 
   return (
     <Link key={project.id} to={`/projects/${project.slug}`}>
       <div
         className={`bg-white dark:bg-[#24283b] border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all duration-300 group flex flex-col cursor-pointer hover:shadow-xl h-full w-full`}
       >
-        <div className="relative aspect-[16/9] overflow-hidden">
+        <div className="relative aspect-video overflow-hidden">
           <img
             className="h-full w-full object-cover blur-sm transition-all duration-300 group-hover:blur-none"
             src={project.image ?? PlaceholderImage}
@@ -29,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
           />
           {project.isWIP && (
             <div className="absolute right-0 top-0 h-24 w-24 overflow-hidden pointer-events-none">
-              <div className="absolute right-[-2.75rem] top-5 w-36 rotate-45 bg-amber-500 py-2 text-center text-xs font-black uppercase tracking-[0.2em] text-slate-950 shadow-md dark:bg-amber-400">
+              <div className="absolute -right-11 top-5 w-36 rotate-45 bg-amber-500 py-2 text-center text-xs font-black uppercase tracking-[0.2em] text-slate-950 shadow-md dark:bg-amber-400">
                 WIP
               </div>
             </div>
@@ -40,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
           <h2 className="mb-3 text-xl text-gray-600 transition-colors hover:text-gray-400 dark:text-gray-300">
             {project.title}
           </h2>
-          <p className="mb-4 text-base text-gray-600 [overflow-wrap:anywhere] dark:text-gray-300">
+          <p className="mb-4 text-base text-gray-600 wrap-anywhere dark:text-gray-300">
             {project.description}
           </p>
 

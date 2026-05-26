@@ -11,6 +11,8 @@ export interface Project {
   image: string;
   ai: boolean;
   isWIP: boolean;
+  hidden: boolean;
+  nextProject: Boolean;
 }
 
 export const projects: Project[] = [
@@ -30,6 +32,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1540397106260-e24a507a08ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: false,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 2,
@@ -46,6 +50,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 3,
@@ -62,6 +68,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 4,
@@ -78,6 +86,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 5,
@@ -94,6 +104,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 6,
@@ -110,6 +122,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 7,
@@ -125,6 +139,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
   {
     id: 8,
@@ -140,6 +156,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
+    hidden: true,
+    nextProject: false,
   },
 ];
 
@@ -157,4 +175,5 @@ export const projects: Project[] = [
 //     "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
 //   ai: false,
 //   isWIP: true,
+
 // },
