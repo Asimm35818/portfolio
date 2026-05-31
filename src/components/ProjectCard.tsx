@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
       >
         <div className="relative aspect-video overflow-hidden">
           <img
-            className="h-full w-full object-cover blur-sm transition-all duration-300 group-hover:blur-none"
+            className="h-full w-full object-cover  transition-all duration-300 group-hover:blur-none md:blur-sm "
             src={project.image ?? PlaceholderImage}
             alt={project.title}
           />
