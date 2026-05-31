@@ -15,7 +15,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
   const project = projects.find((p) => p.id === projectId);
   if (!project) return null;
-  if ((project.hidden = true)) return null;
+  if (project.hidden == true) return null;
 
   return (
     <Link key={project.id} to={`/projects/${project.slug}`}>
@@ -28,7 +28,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectId }) => {
             src={project.image ?? PlaceholderImage}
             alt={project.title}
           />
-          {project.isWIP && (
+          {project.isWIP && project.nextProject && (
+            <div className="absolute right-0 top-0 h-24 w-24 overflow-hidden pointer-events-none">
+              <div className="absolute -right-11 top-5 w-36 rotate-45 bg-pink-500 py-2 text-center text-xs font-black uppercase tracking-[0.2em] text-slate-950 shadow-md dark:bg-pink-400">
+                Up Next
+              </div>
+            </div>
+          )}
+          {project.isWIP && project.nextProject === false && (
             <div className="absolute right-0 top-0 h-24 w-24 overflow-hidden pointer-events-none">
               <div className="absolute -right-11 top-5 w-36 rotate-45 bg-amber-500 py-2 text-center text-xs font-black uppercase tracking-[0.2em] text-slate-950 shadow-md dark:bg-amber-400">
                 WIP

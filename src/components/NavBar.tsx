@@ -88,7 +88,7 @@ const NavBar: React.FC = () => {
       </button>
 
       <div
-        className={`${Styles.navPages} flex items-center gap-2 sm:gap-4 text-base sm:text-lg md:text-xl`}
+        className={`${Styles.navPages} flex items-center gap-2 sm:gap-4 text-base   sm:text-lg md:text-xl`}
       >
         <NavLink
           to="/"

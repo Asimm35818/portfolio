@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1540397106260-e24a507a08ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: false,
-    hidden: true,
+    hidden: false,
     nextProject: false,
   },
   {
@@ -68,8 +68,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
-    hidden: true,
-    nextProject: false,
+    hidden: false,
+    nextProject: true,
   },
   {
     id: 4,
@@ -148,8 +148,27 @@ export const projects: Project[] = [
     title: "Autoclicker",
     slug: "Autoclicker",
     description: "A lightweight autoclicker, with variable click rate/types",
-    fullDescription: "",
+    fullDescription:
+      "A quick autoclicker I created as a side project. Created using WPF + C#. Lightweight and with accurate click counts",
     tech: ["C#", "WPF"],
+    github: "https://github.com/Asimm35818/Auto-Clicker",
+    demo: "https://github.com/Asimm35818/Auto-Clicker/releases/download/Release/AutoClicker.exe",
+    image:
+      "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    ai: false,
+    isWIP: false,
+    hidden: false,
+    nextProject: false,
+  },
+  {
+    id: 8,
+    name: "D2Foundry Reborn",
+    title: "D2Foundry Reborn",
+    slug: "Foundry-Reborn",
+    description: "A replacement for the deprecated D2Foundry platform.",
+    fullDescription:
+      "This project is a successor to D2Foundry, created after the original platform stopped being actively maintained due to funding and sustainability limitations. Updated with the latest weapon and perk information via the Destiny 2 API",
+    tech: ["React", "Typescript", ""],
     github: "https://github.com",
     demo: "https://example.com",
     image:
