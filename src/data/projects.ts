@@ -26,8 +26,8 @@ export const projects: Project[] = [
     fullDescription:
       "A developer portfolio featuring completed and ongoing projects, with GitHub repositories, live demos, technical documentation, blog posts, and contact details.",
     tech: ["React", "Node.js", "TypeScript"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/Asimm35818/portfolio",
+    demo: "https://asim-m.dev/",
     image:
       "https://images.unsplash.com/photo-1540397106260-e24a507a08ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     nextProject: false,
   },
   {
-    id: 8,
+    id: 9,
     name: "D2Foundry Reborn",
     title: "D2Foundry Reborn",
     slug: "Foundry-Reborn",
