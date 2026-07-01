@@ -24,22 +24,24 @@ const About: React.FC<PageProps> = ({ title = "About" }) => {
             <h2 className="text-2xl mb-6">My Story</h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                I'm a full stack developer with over 5 years of experience
-                building web applications that solve real-world problems. My
-                journey in tech started with a curiosity about how websites
-                work, which quickly evolved into a passion for creating digital
-                experiences.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                porro voluptatem eligendi eum impedit? Ipsa ducimus sapiente
+                adipisci illo accusamus modi error dolorum exercitationem
+                eveniet numquam assumenda praesentium rem, quo excepturi
+                temporibus. Inventore placeat adipisci praesentium porro, alias
+                dolores labore?
               </p>
               <p>
-                I specialize in modern JavaScript frameworks, cloud
-                architecture, and building scalable backend systems. I believe
-                in writing clean, maintainable code and staying up-to-date with
-                the latest industry trends and best practices.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias alias reiciendis molestiae modi quas! Laboriosam
+                corrupti eveniet illo nostrum dolores natus obcaecati, quod
+                doloremque ratione esse qui, reprehenderit ipsam, aliquid
+                impedit.
               </p>
               <p>
-                When I'm not coding, you can find me contributing to open source
-                projects, writing technical blog posts, or exploring new
-                technologies.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati, voluptate quas, earum, deserunt praesentium qui quod
+                aspernatur laboriosam minima rem ipsum?
               </p>
             </div>
           </section>
@@ -69,15 +71,12 @@ const About: React.FC<PageProps> = ({ title = "About" }) => {
                 </div>
                 <h3 className="text-xl mb-2">Senior Full Stack Developer</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  Tech Innovations Inc.
+                  Lorem, ipsum dolor.
                 </p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                  <li>
-                    Led development of cloud-native applications using React and
-                    Node.js
-                  </li>
-                  <li>Architected microservices infrastructure on AWS</li>
-                  <li>Mentored junior developers and conducted code reviews</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet</li>
                 </ul>
               </div>
               <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
@@ -86,14 +85,12 @@ const About: React.FC<PageProps> = ({ title = "About" }) => {
                 </div>
                 <h3 className="text-xl mb-2">Full Stack Developer</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  Digital Solutions Co.
+                  Lorem ipsum dolor sit amet
                 </p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                  <li>
-                    Built and maintained multiple client-facing web applications
-                  </li>
-                  <li>Implemented CI/CD pipelines and automated testing</li>
-                  <li>Collaborated with designers and product managers</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
                 </ul>
               </div>
               <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
@@ -102,19 +99,17 @@ const About: React.FC<PageProps> = ({ title = "About" }) => {
                 </div>
                 <h3 className="text-xl mb-2">Junior Developer</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
-                  StartUp Labs
+                  Lorem ipsum
                 </p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                  <li>
-                    Developed features for SaaS platform using React and Express
-                  </li>
-                  <li>Participated in agile development process</li>
-                  <li>Contributed to API design and database optimization</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
                 </ul>
               </div>
             </div>
           </section>
-          <section className="mb-16">
+          <section className="mb-16" hidden>
             <h2 className="text-2xl mb-6 flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +139,7 @@ const About: React.FC<PageProps> = ({ title = "About" }) => {
               </p>
             </div>
           </section>
-          <section>
+          <section hidden>
             <h2 className="text-2xl mb-6 flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

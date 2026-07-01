@@ -12,7 +12,7 @@ export interface Project {
   ai: boolean;
   isWIP: boolean;
   hidden: boolean;
-  nextProject: Boolean;
+  nextProject: boolean;
 }
 
 export const projects: Project[] = [

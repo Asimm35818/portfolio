@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import BlogArticle from "../components/BlogArticle";
 import { blogs } from "../data/blogs";
-import type { Blog } from "../data/blogs";
 
 export default function Blog() {
   useEffect(() => {
@@ -16,8 +15,8 @@ export default function Blog() {
           Thoughts, tutorials, and insights on web development
         </p>
       </div>
-      {blogs.map((blog: Blog) => (
-        <BlogArticle key={blog.id} blogID={blog.id} />
+      {blogs.map((blog) => (
+        <BlogArticle key={blog.slug} blog={blog} />
       ))}
     </div>
   );
