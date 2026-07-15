@@ -27,5 +27,6 @@ dist-ssr
 .env*
 
 
-#Placeholders
+#Placeholders / Templates
 public/blogimages/placeholders
+src\content\format.mdNOT

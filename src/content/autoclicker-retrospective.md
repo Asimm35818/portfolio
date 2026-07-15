@@ -1,10 +1,10 @@
 ---
-ID:2
+ID:1
 title: What I'd Do Differently If I Built My Autoclicker Software Again
 date: 2026-07-09
 slug: autoclicker-retrospective
 description: Looking back at the decisions I made while building my autoclicker and the lessons it taught me about planning software.
-image: /blogimages/2/thumbnail.png
+image: /blogimages/1/thumbnail.png
 Tech: Python,C#,WPF,Software Design
 ---
 
@@ -53,7 +53,7 @@ Consistently snappy startups and much lower memory usage (down to 90kb from 60mb
 
 Except one:
 
-<img src="/blogimages/2/defaultWPFUI.png" alt="My image" width="60%" height="50%" />
+<img src="/blogimages/1/defaultWPFUI.png" alt="an unstyled WPF UI" width="60%" height="50%" />
 
 The Default Formatting still looked plain...
 
@@ -69,7 +69,7 @@ A small addition I learnt about near the end of designing my custom control temp
 
 And with those changes we have....
 
-<img src="/blogimages/2/finishedWPFUI.png" alt="My image" width="60%" height="50%" />
+<img src="/blogimages/1/finishedWPFUI.png" alt="Fully-styled WPF UI" width="60%" height="50%" />
 
 A much sleeker and modern UI!
 
