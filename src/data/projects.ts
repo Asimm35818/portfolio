@@ -21,8 +21,7 @@ export const projects: Project[] = [
     name: "portfolio",
     title: "Software Developer Portfolio",
     slug: "portfolio",
-    description:
-      "Portfolio containing projects, contact information and a blog",
+    description: "Portfolio containing projects, contact information and blogs",
     fullDescription:
       "A developer portfolio featuring completed and ongoing projects, with GitHub repositories, live demos, technical documentation, blog posts, and contact details.",
     tech: ["React", "Node.js", "TypeScript"],

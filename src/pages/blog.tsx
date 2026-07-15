@@ -12,7 +12,7 @@ export default function Blog() {
       <div className="mb-2">
         <h1 className="text-3xl sm:text-4xl mb-3">Blog</h1>
         <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300">
-          Thoughts, tutorials, and insights on web development
+          Thoughts, tutorials, and insights on software development
         </p>
       </div>
       {blogs.map((blog) => (

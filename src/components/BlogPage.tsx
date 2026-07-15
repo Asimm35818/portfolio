@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import NotFound from "../pages/NotFound";
 import { formatBlogDate, getBlogBySlug } from "../data/blogs";
 
@@ -63,6 +64,28 @@ const markdownComponents = {
     <blockquote className="mb-4 border-l-4 border-blue-500 pl-4 italic text-gray-500 dark:text-gray-400">
       {children}
     </blockquote>
+  ),
+  img: ({
+    src,
+    alt,
+    width,
+    height,
+  }: React.PropsWithChildren<{
+    src?: string;
+    alt?: string;
+    width?: number | string;
+    height?: number | string;
+  }>) => (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className="my-6 rounded-lg object-cover"
+      style={{
+        maxWidth: typeof width === "number" || typeof width === "string" ? "100%" : "720px",
+      }}
+    />
   ),
 };
 
@@ -153,7 +176,7 @@ const BlogPage: React.FC = () => {
             )}
 
             <div className="prose max-w-none dark:prose-invert prose-headings:scroll-mt-24">
-              <ReactMarkdown components={markdownComponents}>
+              <ReactMarkdown components={markdownComponents} rehypePlugins={[rehypeRaw]}>
                 {blog.body}
               </ReactMarkdown>
             </div>
