@@ -4,7 +4,7 @@ title: What I'd Do Differently If I Built My Autoclicker Software Again
 date: 2026-07-09
 slug: autoclicker-retrospective
 description: Looking back at the decisions I made while building my autoclicker and the lessons it taught me about planning software.
-image: /blogimages/spoingus.jpg
+image: /blogimages/2/thumbnail.png
 Tech: Python,C#,WPF,Software Design
 ---
 
