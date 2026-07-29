@@ -67,7 +67,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc4MTExODU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
     ai: false,
     isWIP: true,
-    hidden: false,
+    hidden: true,
     nextProject: true,
   },
   {
